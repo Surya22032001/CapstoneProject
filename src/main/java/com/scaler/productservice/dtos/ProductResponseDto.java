@@ -9,7 +9,7 @@ import lombok.Setter;
 public class ProductResponseDto
 {
     private long id;
-    private String title;
+    private String name;
     private double price;
     private String description;
     private String category;
@@ -19,7 +19,7 @@ public class ProductResponseDto
         ProductResponseDto productResponseDto = new ProductResponseDto();
 
         productResponseDto.setId(product.getId());
-        productResponseDto.setTitle(product.getName());
+        productResponseDto.setName(product.getName());
         productResponseDto.setPrice(product.getPrice());
         productResponseDto.setDescription(product.getDescription());
         productResponseDto.setCategory(product.getCategory().getName());
